@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/">Home</a>
+
+<form action="voteForBestMovie" method="GET">
+  <p>Movie Title: <input type="text" name="movieTitle" /></p>
+  <p><input type="submit" value="Submit" /></p>
+
+  <p th:text="'Your favorite movie is: ' + ${BestMovieVote}" />
+</form>
+</body>
+</html>
